@@ -1,0 +1,451 @@
+@font-face {
+  font-family: nb;
+  src: url("./NBInternationalProBoo.ttf");
+}
+
+@font-face {
+  font-family: rj;
+  src: url("./Rejouice-Headline.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: nb;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/*--------- Page 1 Start ----------- */
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #dadada;
+  position: relative;
+}
+
+#cursor {
+  height: 7.5vw;
+  width: 7.5vw;
+  background-color: #ff5f38;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+
+#cursor h5 {
+  font-size: 1.15vw;
+  font-weight: 500;
+}
+
+#page1 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+#page1-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 3vw;
+}
+
+nav h3 {
+  font-size: 1.4vw;
+  font-weight: 100;
+}
+
+nav h4 {
+  font-size: 1.4vw;
+  font-weight: 100;
+}
+
+#page1-content h1 {
+  font-family: rj;
+  font-size: 27vw;
+  font-weight: 100;
+  line-height: 27vw;
+}
+
+#page1-content h1 span {
+  font-family: rj;
+  display: inline-block;
+}
+
+/*--------- Page 1 End ----------- */
+
+/*--------- Page 2 Start --------- */
+
+#page2 {
+  padding-top: 7vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: 100vh;
+  width: 100%;
+  background-color: #faf8f3;
+}
+
+.animated-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.animated-header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.animated-header hr {
+  margin: 1.5vw 0;
+}
+
+.animated-header-top-left h1,
+.animated-header-top-right h1 {
+  font-family: nb;
+  font-size: 1.8vw;
+  font-weight: 100;
+  line-height: 1.1vw;
+}
+
+.animated-header-bottom h1 {
+  font-family: nb;
+  font-size: 4vw;
+  font-weight: 100;
+  line-height: 4.3vw;
+  text-align: left;
+}
+
+/*--------- Page 2 End --------- */
+
+/*--------- Page 3 Start --------- */
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 3vw;
+  background-color: #faf8f3;
+}
+
+#page3-top {
+  text-align: center;
+  padding-top: 3vw;
+}
+
+#page3-top h4 {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+#page3-top h4 span {
+  font-size: 0.7vw;
+  background-color: #000;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+#page3-top h2 {
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+#page3-elements {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 8vw;
+  justify-content: space-between;
+}
+
+#page3-elements .box {
+  height: 100%;
+  width: 32.5%;
+  position: relative;
+}
+
+#page3-elements .box video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#page3-elements .box img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all linear 0.8s;
+  object-position: center;
+}
+
+#page3-elements .box:hover img {
+  opacity: 0;
+}
+
+#page4 {
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  width: 100%;
+  background-color: #faf8f3;
+  position: relative;
+}
+
+#page4-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  margin-top: 5vw;
+}
+
+#page4-bottom video {
+  height: 100%;
+  transform: scale(1.4);
+}
+
+#counter_text_area {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+}
+
+#counter_text_area h5 {
+  font-family: nb;
+  font-weight: 100;
+  text-align: center;
+  color: #fff;
+  font-size: 1vw;
+}
+
+#counter_text {
+  text-align: center;
+  font-family: nb;
+  gap: 0.5vw;
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  font-size: 4vw;
+  color: #fff;
+}
+
+#page5 {
+  height: 100vh;
+  width: 100%;
+  padding: 4vw 0;
+  position: relative;
+}
+
+#page5 h1 {
+  font-family: rj;
+  font-weight: 100;
+  font-size: 10vw;
+  border-bottom: 1px solid #ddd;
+  width: 96%;
+  margin: auto;
+}
+
+#swiperdiv {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  margin-top: -7%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  width: 400px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5vw;
+  align-items: flex-end;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+}
+
+#loader h3 {
+  font-size: 2vw;
+}
+
+#circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(225deg);
+  width: 200px;
+  height: 200px;
+  padding: 19vw;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: all 4s ease;
+}
+
+#circle svg.trailing-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 100%;
+  height: 100%;
+}
+
+#circle svg.trailing-circle circle {
+  stroke-dasharray: 52.5;
+  stroke-dashoffset: 33;
+  transition: stroke-dashoffset 4s ease;
+}
+
+.draw {
+  animation: draw 4s linear;
+}
+
+.rotate {
+  animation: rotate 4s linear;
+}
+
+svg.dot {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) rotate(0deg);
+  border-radius: 50%;
+}
+
+#counter_number {
+  display: flex;
+  flex-direction: column;
+  height: 5px;
+  transition: all 0.5s ease;
+  transform: translateY(-525px);
+}
+
+.count_up {
+  animation: countUp 1s linear;
+}
+
+#cursor2 {
+  height: 7.5vw;
+  width: 7.5vw;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cursor2 h5 {
+  font-size: 1.15vw;
+  font-weight: 500;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+/* #counter_number span {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+#counter_number span.active {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(225deg);
+  }
+}
+
+@keyframes draw {
+  from {
+    stroke-dasharray: 52.5;
+    stroke-dashoffset: 33;
+  }
+  to {
+    stroke-dasharray: 52.5;
+    stroke-dashoffset: 33;
+  }
+}
+
+@keyframes countUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-525px);
+  }
+}
