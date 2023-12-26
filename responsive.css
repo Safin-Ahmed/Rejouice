@@ -1,0 +1,71 @@
+@media only screen and (max-width: 600px) {
+  nav h3,
+  nav h4 {
+    font-size: 5vw;
+  }
+
+  #page2 {
+    height: 100%;
+    padding-bottom: 15vw;
+  }
+
+  #page4-bottom {
+    height: 100%;
+  }
+
+  #circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  #page5 {
+    height: 100%;
+    padding: 20vw 0 0 0;
+  }
+
+  #swiperdiv {
+    height: 100%;
+    margin-top: -3%;
+  }
+
+  #page6 {
+    height: 100vh;
+  }
+
+  #footer {
+    height: 85vh;
+  }
+
+  #page6__heading a {
+    font-size: 11vw;
+  }
+
+  #page6__sub_heading span {
+    font-size: 3vw;
+  }
+
+  .footer__top_upper_right ul li a {
+    font-size: 3vw;
+  }
+
+  .footer__top_upper_left h2 {
+    font-size: 3vw;
+  }
+
+  .footer__top_upper_left button {
+    font-size: 3vw;
+    padding: 1rem 2rem;
+  }
+
+  .footer__top_bottom_left p {
+    font-size: 3vw;
+  }
+
+  .footer__top_bottom_right p {
+    font-size: 3vw;
+  }
+
+  .footer__bottom a h1 {
+    font-size: 25vw;
+  }
+}

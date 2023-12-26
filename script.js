@@ -68,12 +68,18 @@ function page2Animation(dom, settings) {
 
 function swiperInit() {
   const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: 20,
     loop: true,
     autoplay: {
       delay: 1000,
       disableOnInteraction: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
     },
     mode: "horizontal",
     freeMode: true,
@@ -172,4 +178,94 @@ document.getElementById("cursor2").addEventListener("click", () => {
   console.log("Button Clicked!");
 });
 
-countdownEffect(countdownElements.length);
+const page6Link = document.querySelector("#page6__heading");
+const page6Underline = document.querySelector("#underline");
+
+page6Link.addEventListener("mouseenter", () => {
+  page6Underline.classList.add("animate_underline");
+});
+
+page6Link.addEventListener("mouseleave", () => {
+  page6Underline.classList.remove("animate_underline");
+});
+
+page2Animation(".footer__top_upper_left", {
+  y: -200,
+  stagger: 0.2,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#footer",
+    scroller: "main",
+    start: "top 40%",
+    end: "top 45%",
+    scrub: 2,
+  },
+});
+
+page2Animation(".footer__top_upper_right", {
+  y: -200,
+  stagger: 0.2,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#footer",
+    scroller: "main",
+    start: "top 40%",
+    end: "top 45%",
+    scrub: 2,
+  },
+});
+
+page2Animation(".footer__top_bottom_left", {
+  y: -200,
+  stagger: 0.2,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#footer",
+    scroller: "main",
+    start: "top 40%",
+    end: "top 45%",
+    scrub: 2,
+  },
+});
+
+page2Animation(".footer__top_bottom_right", {
+  y: -200,
+  stagger: 0.2,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#footer",
+    scroller: "main",
+    start: "top 40%",
+    end: "top 45%",
+    scrub: 2,
+  },
+});
+
+page2Animation("#page6__heading", {
+  y: 120,
+  opacity: 0,
+  stagger: 0.2,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#page6",
+    scroller: "main",
+    start: "top 40%",
+    end: "top 37%",
+    scrub: 2,
+  },
+});
+
+gsap.from(".footer__bottom a h1 span", {
+  y: -200,
+  opacity: 0,
+  stagger: 0.2,
+  delay: -0.5,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#footer",
+    scroller: "main",
+    start: "top 40%",
+    end: "top 45%",
+    scrub: 2,
+  },
+});
